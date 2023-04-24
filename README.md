@@ -1,10 +1,14 @@
 # WebSearch
 
+Requirements:
+.NET 7.0
+
+
 To run the application:
 1. Download the WebSearchApp
 2. Open Terminal in the WebSearchApp directory
 3. dotnet run
-4. Click the "Now listening on:" url. It's probably "http://localhost:5001"
+4. Click the "Now listening on:" url. It's probably "http://localhost:5001". Launch with Chrome or Firefox is fine. 
 
 
 Sample search words to test:
