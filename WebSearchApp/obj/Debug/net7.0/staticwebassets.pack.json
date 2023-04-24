@@ -1,8 +1,8 @@
 {
   "Files": [
     {
-      "Id": "/Users/el/Documents/CodeStuff/JobCodingChallenge/Stantec/code/WebSearch/obj/Debug/net7.0/scopedcss/projectbundle/SimpleWeb.bundle.scp.css",
-      "PackagePath": "staticwebassets/SimpleWeb.bundle.scp.css"
+      "Id": "/Users/el/Documents/CodeStuff/JobCodingChallenge/Stantec/code/WebSearch/obj/Debug/net7.0/scopedcss/projectbundle/WebSearch.bundle.scp.css",
+      "PackagePath": "staticwebassets/WebSearch.bundle.scp.css"
     },
     {
       "Id": "/Users/el/Documents/CodeStuff/JobCodingChallenge/Stantec/code/WebSearch/wwwroot/css/site.css",
@@ -245,20 +245,20 @@
       "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.map"
     },
     {
-      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.SimpleWeb.Microsoft.AspNetCore.StaticWebAssets.props",
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.WebSearch.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
     {
-      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.build.SimpleWeb.props",
-      "PackagePath": "build\\SimpleWeb.props"
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.build.WebSearch.props",
+      "PackagePath": "build\\WebSearch.props"
     },
     {
-      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.SimpleWeb.props",
-      "PackagePath": "buildMultiTargeting\\SimpleWeb.props"
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.WebSearch.props",
+      "PackagePath": "buildMultiTargeting\\WebSearch.props"
     },
     {
-      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.SimpleWeb.props",
-      "PackagePath": "buildTransitive\\SimpleWeb.props"
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.WebSearch.props",
+      "PackagePath": "buildTransitive\\WebSearch.props"
     }
   ],
   "ElementsToRemove": []

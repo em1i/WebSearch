@@ -1,3 +1,3 @@
 ﻿<Project>
-  <Import Project="../build/SimpleWeb.props" />
+  <Import Project="../build/WebSearch.props" />
 </Project>

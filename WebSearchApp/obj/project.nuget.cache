@@ -2,7 +2,7 @@
   "version": 2,
   "dgSpecHash": "0vAs9eyyN3SWVOdSQsYVdgeGQmgtigll++7//RzMhcOLN76S0sKqVqvrxrB/bLX6rBkYmJnrprOCBvPn3nQRPA==",
   "success": true,
-  "projectFilePath": "/Users/el/Documents/CodeStuff/JobCodingChallenge/Stantec/code/WebSearch/SimpleWeb.csproj",
+  "projectFilePath": "/Users/el/Documents/CodeStuff/JobCodingChallenge/Stantec/code/WebSearch/WebSearch.csproj",
   "expectedPackageFiles": [
     "/Users/el/.nuget/packages/elasticsearch.net/7.17.5/elasticsearch.net.7.17.5.nupkg.sha512",
     "/Users/el/.nuget/packages/microsoft.csharp/4.6.0/microsoft.csharp.4.6.0.nupkg.sha512",

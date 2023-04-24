@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "/Users/el/Documents/CodeStuff/JobCodingChallenge/Stantec/code/WebSearch/SimpleWeb.csproj": {}
+    "/Users/el/Documents/CodeStuff/JobCodingChallenge/Stantec/code/WebSearch/WebSearch.csproj": {}
   },
   "projects": {
-    "/Users/el/Documents/CodeStuff/JobCodingChallenge/Stantec/code/WebSearch/SimpleWeb.csproj": {
+    "/Users/el/Documents/CodeStuff/JobCodingChallenge/Stantec/code/WebSearch/WebSearch.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/el/Documents/CodeStuff/JobCodingChallenge/Stantec/code/WebSearch/SimpleWeb.csproj",
-        "projectName": "SimpleWeb",
-        "projectPath": "/Users/el/Documents/CodeStuff/JobCodingChallenge/Stantec/code/WebSearch/SimpleWeb.csproj",
+        "projectUniqueName": "/Users/el/Documents/CodeStuff/JobCodingChallenge/Stantec/code/WebSearch/WebSearch.csproj",
+        "projectName": "WebSearch",
+        "projectPath": "/Users/el/Documents/CodeStuff/JobCodingChallenge/Stantec/code/WebSearch/WebSearch.csproj",
         "packagesPath": "/Users/el/.nuget/packages/",
         "outputPath": "/Users/el/Documents/CodeStuff/JobCodingChallenge/Stantec/code/WebSearch/obj/",
         "projectStyle": "PackageReference",
