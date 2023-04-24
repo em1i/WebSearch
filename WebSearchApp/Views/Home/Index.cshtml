@@ -1,0 +1,99 @@
+﻿@using WebSearch.Models
+@model SearchResultsModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-ajax-unobtrusive/3.2.6/jquery.unobtrusive-ajax.min.js"></script>
+</head>
+<div class="container">
+    <div class="text-center">
+        <form class="form-inline my-4" asp-action="Index" asp-controller="Home" method="get">
+            <div class="form-group">
+                <input class="form-control mr-2" name="searchText" placeholder="Search" value="@ViewBag.SearchText" />
+            </div>
+            <button type="submit" class="btn btn-primary">Search</button>
+        </form>
+        @if (Model?.Results != null && Model.Results.Count > 0)
+        {
+            <div>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var result in Model.Results)
+                        {
+                            <tr>
+                                <td>@result.Name</td>
+                                <td>
+                                    <table class="table table-borderless">
+                                        <tr><th style="text-align:left; border-left: 1px solid #ddd;">Username:</th><td style="text-align:left;">@result.Username</td></tr>
+                                        <tr><th style="text-align:left; border-left: 1px solid #ddd;">Address:</th><td style="text-align:left;">@result.Address</td></tr>
+                                        <tr><th style="text-align:left; border-left: 1px solid #ddd;">Email:</th><td style="text-align:left;">@result.Email</td></tr>
+                                        <tr><th style="text-align:left; border-left: 1px solid #ddd;">Birthday:</th><td style="text-align:left;">@result.Birthdate.ToString("yyyy-MM-dd")</td></tr>
+                                        <tr><th style="text-align:left; border-left: 1px solid #ddd;">Company:</th><td style="text-align:left;">@result.Company</td></tr>
+                                        <tr><th style="text-align:left; border-left: 1px solid #ddd;">Job:</th><td style="text-align:left;">@result.Job</td></tr>
+                                    <tr>
+                                        <th style="text-align:left; border-left: 1px solid #ddd;">Websites:</th>
+                                        <td>
+                                            @foreach (var website in @result.Website)
+                                            {
+                                                <div style="text-align:left;">@website</div>
+                                            }
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+
+            <!-- Pagination links -->
+            <div class="d-flex justify-content-center">
+                <nav aria-label="Search results pagination">
+                    <ul class="pagination">
+                        @{
+                            int startPage = Model.PageNumber - 2;
+                            if (startPage < 1) 
+                                startPage = 1;
+
+                            int endPage = startPage + 4;
+                            if (endPage > Model.TotalPages) 
+                                endPage = Model.TotalPages;
+
+                            if (endPage - startPage < 4 && startPage > 1) {
+                                startPage = endPage - 4;
+                                if (startPage < 1) 
+                                    startPage = 1;
+                            }
+                        }
+                        @if (Model.PageNumber > 1) {
+                            <li class="page-item"><a class="page-link" href="/Search/Index?pageNumber=@(Model.PageNumber - 1)&searchText=@(Model.SearchText)">Previous</a></li>
+                        }
+                        @for (int i = startPage; i <= endPage; i++) {
+                            if (i == Model.PageNumber) {
+                                <li class="page-item active"><a class="page-link">@i</a></li>
+                            }
+                            else {
+                                <li class="page-item"><a class="page-link" href="/Search/Index?pageNumber=@i&searchText=@(Model.SearchText)">@i</a></li>
+                            }
+                        }
+
+                        @if (endPage < Model.TotalPages) {
+                            <li class="page-item"><a class="page-link" href="/Search/Index?pageNumber=@(endPage + 1)&searchText=@(Model.SearchText)">Next</a></li>
+                        }
+
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    }
+</div>
+</div>
