@@ -1,7 +1,7 @@
 ﻿@using WebSearch.Models
 @model SearchResultsModel
 @{
-    ViewData["Title"] = "Home Page";
+ViewData["Title"] = "Home Page";
 }
 
 <head>
@@ -61,33 +61,38 @@
                     <ul class="pagination">
                         @{
                             int startPage = Model.PageNumber - 2;
-                            if (startPage < 1) 
-                                startPage = 1;
+                            if (startPage < 1) startPage = 1;
 
                             int endPage = startPage + 4;
-                            if (endPage > Model.TotalPages) 
-                                endPage = Model.TotalPages;
+                            if (endPage > Model.TotalPages) endPage = Model.TotalPages;
 
-                            if (endPage - startPage < 4 && startPage > 1) {
+                            if (endPage - startPage < 4 && startPage > 1)
+                            {
                                 startPage = endPage - 4;
-                                if (startPage < 1) 
-                                    startPage = 1;
+                                if (startPage < 1) startPage = 1;
                             }
                         }
-                        @if (Model.PageNumber > 1) {
-                            <li class="page-item"><a class="page-link" href="/Search/Index?pageNumber=@(Model.PageNumber - 1)&searchText=@(Model.SearchText)">Previous</a></li>
+
+                        @if (Model.PageNumber > 1)
+                        {
+                            <li class="page-item"><a class="page-link" href="/Home/Index?pageNumber=@(Model.PageNumber - 1)&searchText=@(Model.SearchText)">Previous</a></li>
                         }
-                        @for (int i = startPage; i <= endPage; i++) {
-                            if (i == Model.PageNumber) {
+
+                        @for (int i = startPage; i <= endPage; i++)
+                        {
+                            if (i == Model.PageNumber)
+                            {
                                 <li class="page-item active"><a class="page-link">@i</a></li>
                             }
-                            else {
-                                <li class="page-item"><a class="page-link" href="/Search/Index?pageNumber=@i&searchText=@(Model.SearchText)">@i</a></li>
+                            else
+                            {
+                                <li class="page-item"><a class="page-link" href="/Home/Index?pageNumber=@i&searchText=@(Model.SearchText)">@i</a></li>
                             }
                         }
 
-                        @if (endPage < Model.TotalPages) {
-                            <li class="page-item"><a class="page-link" href="/Search/Index?pageNumber=@(endPage + 1)&searchText=@(Model.SearchText)">Next</a></li>
+                        @if (endPage < Model.TotalPages)
+                        {
+                            <li class="page-item"><a class="page-link" href="/Home/Index?pageNumber=@(endPage + 1)&searchText=@(Model.SearchText)">Next</a></li>
                         }
 
                     </ul>

@@ -17,7 +17,7 @@ public class HomeController : Controller
         var cloudId = "https://t1-013eaf.es.us-central1.gcp.cloud.es.io";
         var username = "elastic";
         var password = "M1ebhIUbFZYojr6jKFIj1Y68";
-        var indexName = "index5";
+        var indexName = "profile6";
         
         var settings = new ConnectionSettings(new Uri(cloudId))
             .DefaultIndex(indexName)

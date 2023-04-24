@@ -433,11 +433,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/el/Documents/CodeStuff/JobCodingChallenge/Stantec/code/WebSearch/WebSearch.csproj",
+      "projectUniqueName": "/Users/el/Documents/CodeStuff/JobCodingChallenge/Stantec/GitHub/WebSearch/WebSearchApp/WebSearch.csproj",
       "projectName": "WebSearch",
-      "projectPath": "/Users/el/Documents/CodeStuff/JobCodingChallenge/Stantec/code/WebSearch/WebSearch.csproj",
+      "projectPath": "/Users/el/Documents/CodeStuff/JobCodingChallenge/Stantec/GitHub/WebSearch/WebSearchApp/WebSearch.csproj",
       "packagesPath": "/Users/el/.nuget/packages/",
-      "outputPath": "/Users/el/Documents/CodeStuff/JobCodingChallenge/Stantec/code/WebSearch/obj/",
+      "outputPath": "/Users/el/Documents/CodeStuff/JobCodingChallenge/Stantec/GitHub/WebSearch/WebSearchApp/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/el/.nuget/NuGet/NuGet.Config"
